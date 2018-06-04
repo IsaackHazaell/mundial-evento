@@ -249,42 +249,54 @@
 				</div>
 				<!-- /Section-header -->
 
-				<!-- contact -->
-				<div class="col-sm-4">
-					<div class="contact">
-						<i class="fa fa-phone"></i>
-						<h3>Teléfono</h3>
-						<p>512-421-3940</p>
-					</div>
-				</div>
-				<!-- /contact -->
-
-				<!-- contact -->
-				<div class="col-sm-4">
-					<div class="contact">
-						<i class="fa fa-envelope"></i>
-						<h3>Email</h3>
-						<p>email@support.com</p>
-					</div>
-				</div>
-				<!-- /contact -->
-
-				<!-- contact -->
-				<div class="col-sm-4">
-					<div class="contact">
-						<i class="fa fa-map-marker"></i>
-						<h3>Dirección</h3>
-						<p>1739 Bubby Drive</p>
-					</div>
-				</div>
-				<!-- /contact -->
-
 				<!-- contact form -->
 				<div class="col-md-8 col-md-offset-2">
-					<form class="contact-form">
-						<input type="text" class="input" placeholder="Name">
-						<input type="email" class="input" placeholder="Email">
-						<button class="main-btn">Registrarse</button>
+					<form class="contact-form" method="POST" action="/bd/data.php">
+						<section>
+			        <h5 class="display-2 text-left">Selecciona tu ciudad</h5>
+			      </section>
+							<select class="form-control text-center" id="city" name="city">
+								<option value="Bogota">Bogotá</option>
+								<option value="Chia">Chía</option>
+								<option value="Cajica">Cajicá</option>
+								<option value="Cota">Cota</option>
+								<option value="La Calera">La Calera</option>
+								<option value="Bucaramanga">Bucaramanga</option>
+								<option value="Ruitoque">Ruitoque</option>
+								<option value="Ibague">Ibagué</option>
+								<option value="Cucuta">Cúcuta</option>
+								<option value="Villaviciencio">Villavicencio</option>
+								<option value="Tunja">Tunja</option>
+								<option value="Sogamoso">Sogamoso</option>
+								<option value="Duitama">Duitama</option>
+								<option value="Neiva">Neiva</option>
+								<option value="Medellin">Medellín</option>
+								<option value="Manizales">Manizales</option>
+								<option value="Montería">Montería</option>
+								<option value="Sincelejo">Sincelejo</option>
+								<option value="Envigado">Envigado</option>
+								<option value="Sabaneta">Sabaneta</option>
+								<option value="Itagui">Itagüí</option>
+								<option value="Rionegro">Rionegro</option>
+								<option value="Antioquia">Antioquia</option>
+								<option value="Cali">Cali</option>
+								<option value="Pereira">Pereira</option>
+								<option value="Armenia">Armenia</option>
+								<option value="Jamundi">Jamundí</option>
+								<option value="Palmira">Palmira</option>
+								<option value="Popayan">Popayán</option>
+								<option value="Pasto">Pasto</option>
+								<option value="Santiago de Cali">Santiago de Cali</option>
+								<option value="Valle del Cauca">Valle del Cauca</option>
+								<option value="Barranquilla">Barranquilla</option>
+								<option value="Cartagena">Cartagena</option>
+								<option value="Valledupar">Valledupar</option>
+								<option value="Santa Marta">Santa Marta</option>
+							</select>
+							<br>
+							<input type="text" class="input" placeholder="Nombre completo" name="name">
+							<input type="email" class="input" placeholder="Email" name="email">
+							<input class="main-btn" type="submit" value="Registrarse">
 					</form>
 				</div>
 				<!-- /contact form -->
