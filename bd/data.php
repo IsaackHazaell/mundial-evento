@@ -28,6 +28,6 @@
     }
     else
     {
-      header("Location: ../index.html");
+      header("Location: ../registrado.html");
     }
 ?>
