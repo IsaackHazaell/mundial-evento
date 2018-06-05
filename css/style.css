@@ -41,6 +41,33 @@ Table OF Contents
 	General
 \*------------------------------------*/
 
+/* -- Background -- */
+
+.bg-container-contact100 {
+  width: 100%;
+  height: 100% ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.bg-container-contact100::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -11;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(41,44,51,0.6);
+  pointer-events: none;
+}
 
 /* -- typography -- */
 
